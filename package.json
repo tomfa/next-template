@@ -13,8 +13,7 @@
     "lint": "eslint .",
     "lint:ignore-warnings": "eslint . --quiet",
     "lint:prettier-check": "prettier --check \"**/*.{js,jsx,ts,tsx,json}\"",
-    "lint:prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
-    "postinstall": "husky install"
+    "lint:prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\""
   },
   "engines": {
     "node": ">=12.18.0"
