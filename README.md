@@ -1,5 +1,8 @@
 # NextJS Template
 
+![Build](https://github.com/tomfa/next-template/actions/workflows/deploy.yml/badge.svg)
+![Linting](https://github.com/tomfa/next-template/actions/workflows/lint.yml/badge.svg)
+
 - TypeScript
 - ESLint & Prettier
 - Styled components
