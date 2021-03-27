@@ -31,4 +31,4 @@ Script and github actions is set up to deploy to Github pages.
 yarn deploy
 ```
 
-_Custom domains: Replace "mydomain.com" in "predeploy" script to add a custom domain_
+_Custom domains: Add ` && echo 'mydomain.com' >> out/CNAME` in "predeploy" script to add a custom domain_
