@@ -10,6 +10,11 @@
 yarn
 ```
 
+#### For deployment
+Replace `PRODUCTION_DOMAIN_ROOT` in `next.config.js`
+
+The repository is set up to deploy on Github pages. If we want a custom domain, we must add ` && echo 'mydomain.com' >> out/CNAME` in `predeploy` script.
+
 ### Run
 
 ```
@@ -31,4 +36,3 @@ Script and github actions is set up to deploy to Github pages.
 yarn deploy
 ```
 
-_Custom domains: Add ` && echo 'mydomain.com' >> out/CNAME` in "predeploy" script to add a custom domain_
