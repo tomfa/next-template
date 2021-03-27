@@ -1,6 +1,3 @@
-import { useContext } from 'react';
-import { ThemeContext } from 'styled-components';
-
 export const theme = {
   fonts: {
     primary:
@@ -20,11 +17,6 @@ export const theme = {
   layout: {
     maxWidth: '800',
   },
-};
-
-export const useTheme = (): typeof theme => {
-  const themeContext = useContext(ThemeContext);
-  return (themeContext as unknown) as typeof theme;
 };
 
 export default theme;
