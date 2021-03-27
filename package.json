@@ -1,19 +1,20 @@
 {
-  "name": "i-has-a-bucket",
-  "homepage": "https://ihasabucket.it",
+  "name": "tomfa-next-template",
+  "homepage": "https://github.com/tomfa/next-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "predeploy": "npm run build && npm run export && touch ./out/.nojekyll && echo 'ihasabucket.it' >> out/CNAME && chmod -R 755 out",
+    "predeploy": "npm run build && npm run export && touch ./out/.nojekyll && echo 'mydomain.com' >> out/CNAME && chmod -R 755 out",
     "deploy": "gh-pages -d out -t true",
     "start": "next start",
     "lint": "eslint .",
     "lint:ignore-warnings": "eslint . --quiet",
     "lint:prettier-check": "prettier --check \"**/*.{js,jsx,ts,tsx,json}\"",
-    "lint:prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\""
+    "lint:prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
+    "postinstall": "husky install"
   },
   "engines": {
     "node": ">=12.18.0"

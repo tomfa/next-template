@@ -1,15 +1,12 @@
-# ihasabucket
+# NextJS Template
 
-> Webapplication or file hosting on AWS in 60 seconds. 
-
-NextJS app for [ihasabucket.it](https://ihasabucket.it)
-
-![Photo by Jay Ruzesky on Unsplash](https://user-images.githubusercontent.com/1502702/92998877-e9e1cc00-f51c-11ea-98e6-331460921cde.jpg)
+- TypeScript
+- ESLint & Prettier
+- Styled components
+- Github actions
 
 ### Setup
-
 ```
-git clone git@github.com:tomfa/ihasabucket.git
 yarn
 ```
 
@@ -24,10 +21,14 @@ yarn dev
 Prettier and eslint is used for this project. 
 New code is automatically validated on commit using a pre commit hook.
 
+
 ### Deploy
 
+Script and github actions is set up to deploy to Github pages. 
+
 ```
+# manually deploy
 yarn deploy
 ```
 
-_Ironically hosted on :heart: Github Pages :smile:_ 
+_Custom domains: Replace "mydomain.com" in "predeploy" script to add a custom domain_
