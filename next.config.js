@@ -8,6 +8,7 @@ const DEVELOPMENT_DOMAIN_ROOT = undefined; // = root of domain
 
 module.exports = (phase) => ({
   distDir: 'build',
+  trailingSlash: true,
 
   basePath:
     phase === PHASE_DEVELOPMENT_SERVER
