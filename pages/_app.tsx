@@ -1,29 +1,9 @@
-import { AppProps } from 'next/app';
-import { ThemeProvider } from 'styled-components';
+import '../styles/globals.css';
 
-// Global base styles
-import theme from '../styles/theme';
+import type { AppProps } from 'next/app'
 
-const App = ({ Component, pageProps }: AppProps) => (
-  <ThemeProvider theme={theme}>
-    <style jsx global>
-      {`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: ${theme.fonts.primary};
-          background-color: ${theme.colors.bgPrimary};
-          color: ${theme.colors.textPrimary};
-        }
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
 
-        * {
-          box-sizing: border-box;
-        }
-      `}
-    </style>
-    <Component {...pageProps} />
-  </ThemeProvider>
-);
-
-export default App;
+export default MyApp
