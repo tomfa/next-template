@@ -4,9 +4,9 @@
 ![Linting](https://github.com/tomfa/next-template/actions/workflows/lint.yml/badge.svg)
 
 | Tech     | Choice            |
-| -------- | ----------------- |
+| -------- |-------------------|
 | Language | TypeScript        |
-| CSS      | Styled components |
+| CSS      | Tailwind          |
 | CI       | Github Actions    |
 | Linting  | ESLint + Prettier |
 | Hosting  | Github Pages      |
