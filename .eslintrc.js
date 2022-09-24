@@ -4,21 +4,14 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    // Uses eslint-config-prettier to disable ESLint rules that would conflict with prettier
-    'prettier/react',
-    'prettier/@typescript-eslint',
-
-    'airbnb',
-  ],
-  parser: '@typescript-eslint/parser',
+  extends: ['airbnb'],
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
     ecmaVersion: 12,
     sourceType: 'module',
+    ecmaFeatures: {
+      classes: true,
+    },
+    tsconfigRootDir: __dirname,
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
