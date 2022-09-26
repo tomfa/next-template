@@ -7,6 +7,9 @@ const PRODUCTION_DOMAIN_ROOT = '/next-template';
 const DEVELOPMENT_DOMAIN_ROOT = undefined; // = root of domain
 
 module.exports = (phase) => ({
+  images: {
+    unoptimized: true, // Required for static export.
+  },
   distDir: 'build',
   trailingSlash: true,
 
