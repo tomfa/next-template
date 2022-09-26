@@ -1,19 +1,6 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true,
-  },
-  extends: ['airbnb'],
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module',
-    ecmaFeatures: {
-      classes: true,
-    },
-    tsconfigRootDir: __dirname,
-  },
-  plugins: ['react', '@typescript-eslint'],
+  extends: ['airbnb', 'next/core-web-vitals'],
+  plugins: ['@typescript-eslint'],
   rules: {
     // React's PropTypes are discouraged
     'react/require-default-props': 0,
