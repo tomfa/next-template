@@ -112,6 +112,9 @@ module.exports = {
     'prettier/prettier': 0,
     'operator-linebreak': 0,
     'comma-dangle': 0,
+    'react/jsx-one-expression-per-line': 0,
+    'object-curly-newline': 0,
+    'react/jsx-closing-bracket-location': 0,
 
     // Next handles React in scope for us
     'react/react-in-jsx-scope': 0,
